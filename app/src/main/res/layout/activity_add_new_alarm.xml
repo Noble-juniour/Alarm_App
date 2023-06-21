@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewAlarmActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/edittxtHour"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="hour"
+            android:inputType="number"/>
+        <EditText
+            android:id="@+id/edittxtMinute"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="MINUTE"
+            android:inputType="number"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/edittxtHour"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAddAlarm"
+            android:text="add alarm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
